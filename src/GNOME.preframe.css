@@ -56,10 +56,11 @@ header.top>div nav>ul>li a:hover {
     background: #3d3846;
 }
 
-.intro {
+.root-intro,#intro {
     padding: 90px 10px 60px;
     margin-bottom: 60px;
     background: #241f31;
+    color: var(--secondary-color);
 }
 
 #content a {
@@ -76,6 +77,10 @@ header.top>div nav>ul>li a:hover {
     padding: calc(30px + 1em) 20px calc(40px + 1em);
     text-align: center;
     background: linear-gradient(180deg, var(--header-color), var(--background-color));
+}
+
+.special h2{
+    font-size: 45px;
 }
 
 .special small{
