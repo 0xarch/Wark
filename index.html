@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/GNOME.preframe.css">
     <link rel="stylesheet" href="src/GNOME.defs.css">
     <title>Document</title>
+    <script type="module" src="src/loader.svg.js"></script>
     <style>
         body{
             --primary-color:var(--blue4);
@@ -18,13 +19,15 @@
 <body>
     <header class="top">
         <div>
-            <div class="logo">HERE IS GNOME LOGO</div>
+            <div>
+                <div class="logo">HERE IS GNOME LOGO</div>
+            </div>
             <nav class="index">
                 <ul>
-                    <li><a href="">CORE</a></li>
-                    <li><a href="">CIRCLE</a></li>
-                    <li><a href="">DEVELOPMENT</a></li>
-                    <li><a href="">LANGUAGE</a></li>
+                    <li><a href="">Core</a></li>
+                    <li><a href="">Circle</a></li>
+                    <li><a href="">Development</a></li>
+                    <li><a href="" $svg="svgs/gnome-feather-globe.svg"></a></li>
                 </ul>
             </nav>
         </div>
@@ -84,42 +87,42 @@
             <h2>PARTICIPATE IN</h2>
             <div class="buttons">
                 <a href="" class="text-button">
-                    <div class="icon"><img src="svgs/gnome-feather-download.svg" alt=""></div>
+                    <div class="icon" $svg="svgs/gnome-feather-download.svg"></div>
                     <div>
                         <h4>Get the app</h4>
                         Install the latest version from Flathub.
                     </div>
                 </a>
                 <a href="" class="text-button">
-                    <div class="icon"><img src="svgs/gnome-feather-tool.svg" alt=""></div>
+                    <div class="icon" $svg="svgs/gnome-feather-tool.svg"></div>
                     <div>
                         <h4>Contribute</h4>
                         Learn how you can contribute to this app.
                     </div>
                 </a>
                 <a href="" class="text-button">
-                    <div class="icon"><img src="svgs/gnome-feather-clipboard.svg" alt=""></div>
+                    <div class="icon" $svg="svgs/gnome-feather-clipboard.svg"></div>
                     <div>
                         <h4>Give feedback</h4>
                         Contribute your ideas or report issues on the app's issue tracker.
                     </div>
                 </a>
                 <a href="" class="text-button">
-                    <div class="icon"><img src="svgs/gnome-feather-message-circle.svg" alt=""></div>
+                    <div class="icon" $svg="svgs/gnome-feather-message-circle.svg"></div>
                     <div>
                         <h4>Get in touch</h4>
                         Learn how you can contact the project.
                     </div>
                 </a>
                 <a href="" class="text-button">
-                    <div class="icon"><img src="svgs/gnome-feather-globe.svg" alt=""></div>
+                    <div class="icon" $svg="svgs/gnome-feather-globe.svg"></div>
                     <div>
                         <h4>Help translating</h4>
                         Help translate this app into your language.
                     </div>
                 </a>
                 <a href="" class="text-button">
-                    <div class="icon"><img src="svgs/gnome-feather-dollar-sign.svg" alt=""></div>
+                    <div class="icon" $svg="svgs/gnome-feather-globe.svg"></div>
                     <div>
                         <h4>Donate money</h4>
                         Donate to the GNOME Foundation to support this project.
