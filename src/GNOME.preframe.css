@@ -56,14 +56,15 @@ header.top>div nav>ul>li a:hover {
     background: #3d3846;
 }
 
-.root-intro,#intro {
+.root-intro,
+#intro {
     padding: 90px 10px 60px;
     margin-bottom: 60px;
     background: #241f31;
     color: var(--secondary-color);
 }
 
-#content a {
+.content a {
     color: var(--link-color);
     text-decoration: none;
 }
@@ -79,16 +80,16 @@ header.top>div nav>ul>li a:hover {
     background: linear-gradient(180deg, var(--header-color), var(--background-color));
 }
 
-.special h2{
+.special h2 {
     font-size: 45px;
 }
 
-.special small{
+.special small {
     font-size: 18px;
     color: var(--header-second-color);
 }
 
-.special>div{
+.special>div {
     max-width: 500px;
 }
 
@@ -101,6 +102,10 @@ section {
 
 section.small {
     max-width: 690px;
+}
+
+section.dsmall{
+    max-width: 790px;
 }
 
 ul.intros {
@@ -152,4 +157,43 @@ footer {
     padding-top: 20px;
     padding-bottom: 30px;
     margin-top: 70px;
+}
+
+.buttons {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.buttons .text-button,
+.buttons .text-button:visited {
+    display: flex;
+    background-color: var(--background-color);
+    transition: .3s background-color;
+    padding: 1em;
+    color: var(--text-color);
+    border-radius: 7px;
+}
+
+.buttons .text-button .icon,
+.buttons .text-button:visited .icon {
+    filter: var(--light-shadow);
+    margin-inline-end: 20px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    padding: 10px;
+    height: 24px;
+    width: 24px;
+}
+
+.buttons .text-button:hover,
+.buttons .text-button:visited:hover {
+    background-color: var(--tile-hover-color);
+    color: var(--text-color);
+    filter: none;
+}
+
+.buttons .text-button h4,
+.buttons .text-button:visited h4 {
+    margin: 0 0 3px;
 }
