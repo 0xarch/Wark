@@ -17,6 +17,8 @@ body {
     --icon-shadow: drop-shadow(0 1.3px 1.6px rgba(0, 0, 0, .25)) drop-shadow(0 6.4px 11.2px rgba(0, 0, 0, .14));
     --light-shadow: drop-shadow(0 0px 1px rgba(0, 0, 0, 0.1)) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.07));
     --content-width: 1020px;
+    --block-background-color: #ffffff;
+    --block-color: #353535;
 }
 
 @media (prefers-color-scheme:dark) {
@@ -27,5 +29,7 @@ body {
         --tile-hover-color: #241f31;
         --header-color: #241f31;
         --header-second-color: #c0bfbc;
+        --block-background-color: #363636;
+        --block-color: #ffffff;
     }
 }

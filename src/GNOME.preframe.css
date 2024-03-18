@@ -94,7 +94,7 @@ header.top>div nav>ul>li a:hover {
 }
 
 section {
-    padding: 0 var(--content-padding) 0;
+    padding: 0 var(--content-padding) 30px;
     box-sizing: border-box;
     margin: auto;
     max-width: var(--content-width);
@@ -159,6 +159,12 @@ footer {
     margin-top: 70px;
 }
 
+footer>.list{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
 .buttons {
     margin: auto;
     display: grid;
@@ -206,6 +212,16 @@ footer {
     width: 24px;
 }
 
+.block {
+	padding: 1em 1.2em;
+	border: none;
+	border-radius: 1em;
+	background: var(--block-backgroundp-color);
+	color: var(--block-color);
+	overflow-wrap: break-word;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.03), 0 1px 3px 1px rgba(0,0,0,0.07), 0 2px 6px 2px rgba(0,0,0,0.03);
+}
+
 @media(max-width:700px) {
     header.top>div nav a {
         padding-left: .5em !important;
@@ -214,5 +230,10 @@ footer {
 
     header.top>div .logo {
         display: none;
+    }
+}
+@media(min-width: 900px) {
+    .block{
+        padding: 1.6em 1.9em;
     }
 }
